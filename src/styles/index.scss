@@ -42,7 +42,7 @@ body {
   }
 
   @for $length from 28 through 31 {
-    &--month-lenght-#{$length} {
+    &--month-length-#{$length} {
       .calendar__day:nth-child(n + #{$length + 1}) {
         display: none;
       }
@@ -58,11 +58,12 @@ body {
     justify-content: center;
     align-items: center;
     transition: 500ms;
+    box-sizing: border-box;
   }
 
   &__day:hover {
     background-color: #ffbfcb;
     cursor: pointer;
-    transform: translate(0, -20px); 
+    transform: translate(0, -20px);
   }
 }
